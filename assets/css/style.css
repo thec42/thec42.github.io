@@ -3,7 +3,7 @@
 [data-theme="light"],
 :root:not([data-theme="dark"]) {
   --primary: #3949ab;
-  --primary-hover: #303f9f;
+  --primary-hover: #3f51b5;
   --primary-focus: rgba(57, 73, 171, 0.125);
   --primary-inverse: #ccc;
 }
@@ -15,7 +15,7 @@
     --primary: #3949ab;
     --primary-hover: #3f51b5;
     --primary-focus: rgba(57, 73, 171, 0.25);
-    --primary-inverse: #fff;
+    --primary-inverse: #ccc;
   }
 }
 
@@ -25,7 +25,11 @@
   --primary: #3949ab;
   --primary-hover: #3f51b5;
   --primary-focus: rgba(57, 73, 171, 0.25);
-  --primary-inverse: #fff;
+  --primary-inverse: #ccc;
+}
+
+[data-theme="dark"] .nav-logo {
+  filter: invert(1) contrast(0%) brightness(200%);
 }
 
 /* Indigo (Common styles) */
@@ -45,4 +49,13 @@ article footer {
   font-size: 0.8em;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
+}
+
+header.jumbotron {
+  overflow: hidden;
+  background-image: linear-gradient(#3949ab, #3f51b555),
+    url("/assets/images/night-sky-g17765073d_1920.jpg");
+
+  background-position: center;
+  background-size: cover;
 }
