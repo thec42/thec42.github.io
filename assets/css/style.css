@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Oxygen:wght@300;400;700&display=swap");
+
 /* Indigo Light scheme (Default) */
 /* Can be forced with data-theme="light" */
 [data-theme="light"],
@@ -5,7 +7,7 @@
   --primary: #3949ab;
   --primary-hover: #3f51b5;
   --primary-focus: rgba(57, 73, 171, 0.125);
-  --primary-inverse: #ccc;
+  --primary-inverse: #efe;
 }
 
 /* Indigo Dark scheme (Auto) */
@@ -15,7 +17,7 @@
     --primary: #3949ab;
     --primary-hover: #3f51b5;
     --primary-focus: rgba(57, 73, 171, 0.25);
-    --primary-inverse: #ccc;
+    --primary-inverse: #efe;
   }
 }
 
@@ -25,7 +27,7 @@
   --primary: #3949ab;
   --primary-hover: #3f51b5;
   --primary-focus: rgba(57, 73, 171, 0.25);
-  --primary-inverse: #ccc;
+  --primary-inverse: #efe;
 }
 
 [data-theme="dark"] .nav-logo {
@@ -38,6 +40,56 @@
   --form-element-focus-color: var(--primary-focus);
   --switch-color: var(--primary-inverse);
   --switch-checked-background-color: var(--primary);
+}
+
+:root {
+  --font-family: "Oxygen", sans-serif;
+  --border-radius: 0;
+  --form-element-spacing-vertical: 1rem;
+  --form-element-spacing-horizontal: 1.25rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  --font-family: "Oswald", sans-serif;
+  --font-weight: 800;
+}
+
+h1 {
+  --font-size: 2.5rem;
+  --typography-spacing-vertical: 2.5rem;
+}
+
+h2 {
+  --font-size: 2rem;
+  --typography-spacing-vertical: 2rem;
+}
+
+h3 {
+  --font-size: 1.75rem;
+  --typography-spacing-vertical: 1.75rem;
+}
+
+h4 {
+  --font-size: 1.5rem;
+  --typography-spacing-vertical: 1.5rem;
+}
+
+h5 {
+  --font-size: 1.25rem;
+  --typography-spacing-vertical: 1.25rem;
+}
+
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+a[role="button"] {
+  --font-weight: 600;
 }
 
 article {
