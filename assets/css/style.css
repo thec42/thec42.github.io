@@ -56,7 +56,7 @@ h4,
 h5,
 h6 {
   --font-family: "Oswald", sans-serif;
-  --font-weight: 800;
+  --font-weight: 400;
 }
 
 button,
@@ -65,11 +65,17 @@ input[type="reset"],
 input[type="button"],
 a[role="button"] {
   border-radius: 1rem;
-  --font-weight: 600;
+  --font-weight: 200;
   box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
 }
 
-header.jumbotron {
+html {
+  background-color: #000;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0 auto;
   overflow: hidden;
   background-image: linear-gradient(#3949ab, #3f51b555),
     url("/assets/images/night-sky-g17765073d_1920.jpg");
