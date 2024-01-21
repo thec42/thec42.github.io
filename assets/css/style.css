@@ -70,16 +70,10 @@ a[role="button"] {
 }
 
 html {
-  background-color: #000;
+  background-color: linear-gradient(#3949ab, #3f51b555);
 }
 
 body {
   min-height: 100vh;
   margin: 0 auto;
-  overflow: hidden;
-  background-image: linear-gradient(#3949ab, #3f51b555),
-    url("/assets/images/night-sky-g17765073d_1920.jpg");
-
-  background-position: center;
-  background-size: cover;
 }
